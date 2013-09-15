@@ -26,9 +26,10 @@ session_start('info');
 		{
 			if(estado)
 			{
+				// futura llamada ajax para guardar en la db
 				alert(cod_item);
 			}else{
-				alert("NO")
+				cod_item = "";
 			}
 		}
         function loguear()
