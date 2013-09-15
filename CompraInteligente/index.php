@@ -1,9 +1,13 @@
-
+<?PHP
+session_start('info');
+?>
 <html>
     <head>
         <script src="http://static.mlstatic.com/org-img/sdk/mercadolibre-1.0.4.js"></script>
         <script type="text/javascript" src="js/index/index.js"></script>
         <script type="text/javascript" src="libs/ext-all.js"></script>
+		<script type="text/javascript" src="libs/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="libs/jquery.redirect.min.js"></script>		
         <link rel="stylesheet" type="text/css" href="css/estilos.css" />
         <link rel="stylesheet" type="text/css" href="css/estilos-exjs.css"/>
         <link rel="stylesheet" type="text/css" href="css/estilos-exjs2.css"/>
@@ -16,16 +20,18 @@
     <script type="application/javascript">
         function loguear()
         {
-        MELI.init ({ client_id : 6977659590438028 });
-        MELI.login(function() {
-        MELI.get(
-        "/users/me",{},
-        function(data) { alert("Hello "+MELI.getToken()) }
-        );
-
-        });
-
-
+		   var token = "";
+			MELI.init ({ client_id : 6977659590438028 });
+			MELI.login(function() {
+				MELI.get("/users/me",{},
+					function(data) { token=MELI.getToken(); 
+						$().redirect('operaciones/index.php', {'Token': token, 'nombre': data[2].first_name, 'id':data[2].id,"email": data[2].email});
+					}
+				);
+			});
+			
+			return false;
+			
         }
 
 
@@ -56,8 +62,9 @@
                                 <form action="class/auth/login.php" method="post">
                             <table width="400" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                           <td width="126" align="center"><input type="submit" id="imageField" value="Ingresar A La Aplicacion" /></td>
-
+                           <td width="126" align="center">
+						   <input type="button" id="imageField" value="Ingresar A La Aplicacion" onClick="loguear();"/></td>
+							 
 
 
                                 </tr>
