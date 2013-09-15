@@ -1,5 +1,6 @@
 <?PHP
 session_start('info');
+// guardar las variables principales en session
 $_SESSION['access_token']= $_POST["Token"];
 $_SESSION['nombre']= $_POST["nombre"];
 $_SESSION['id']= $_POST["id"];

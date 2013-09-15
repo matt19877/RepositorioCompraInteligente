@@ -40,9 +40,9 @@ session_start('info');
 			$.getJSON(favorItem, function(data) {
 				var items = [];
 				$.each(data, function(key, val) {
-					
+					// obtiene informacion del item
 					$.getJSON(ItemABuscar+val.item_id,function(item) {
-					    //var elemento = "<li class=\"ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c\" data-corners=\"false\" data-shadow=\"false\" data-iconshadow=\"true\" data-wrapperels=\"div\" data-icon=\"arrow-r\" data-iconpos=\"right\" data-theme=\"c\">";
+					    
 						var	elemento = "<li class=\"ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-last-child ui-btn-up-c\" data-corners=\"false\" data-shadow=\"false\" data-iconshadow=\"true\" data-wrapperels=\"div\" data-icon=\"arrow-r\" data-iconpos=\"right\" data-theme=\"c\">";
 							elemento += "<div class=\"ui-btn-inner ui-li ui-li-has-alt\"> <div class=\"ui-btn-text\">";
 							
@@ -69,6 +69,7 @@ session_start('info');
 	    <script type="application/javascript">
 			loguear();
 		</script>
+<!--  Cartel para aceptar la publicacion del favorito    -->		
 <div data-role="popup" id="purchase" data-theme="d" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
     <h3>Publicar su favorito</h3>
     <p>Desea publicar su favorito para recibir sugerencia de mejores ofertas? </p>
