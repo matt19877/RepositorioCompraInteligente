@@ -1,6 +1,6 @@
 <?php
 
-include 'db.conf.inc';
+include '../libs/db.conf.inc';
 
 function ObtenerCategoria($idProducto,$idPublicacion)
     {

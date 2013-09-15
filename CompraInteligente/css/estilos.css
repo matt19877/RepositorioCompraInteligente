@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.body {
+    margin:0px;
+}
+
+.body2 {
+    margin:0px;
+    background-color:#505254;
+}
+
+
+
+
+
+
+/*-------------------------------------- BARRA TITULO --------------------------------------*/
+
+
+.icono_titulo {
+    width:100px;
+    height:100px;
+    float:left;
+}
+
+.titulo_texto {
+    width:500px;
+    height:100px;
+    float:left;
+}
+
+/*-------------------------------------- CONTENIDO --------------------------------------*/
+
+.contenido {
+    width:100%;
+    height:800px;
+    float:left;
+    background-image:url('../imgs/fondo_body.png');
+    background-repeat:repeat;
+}
+
+.contenido2 {
+    width:100%;
+    height:800px;
+    float:left;
+    background-image:url('../imgs/shadow.png');
+    background-position:top;
+    background-repeat:repeat-x;
+}
+
+.sidebar{
+    width:15%;
+    height:800px;
+    float:left;
+    background-image:url('../imgs/shadow.png');
+    background-position:top;
+    background-repeat:repeat-x;
+}
+
+.grid {
+    width: 1100px;
+    height:500px;
+    margin:auto;
+    padding-top:40px;
+    color:#525252;
+}
+
+#grid {
+    width: 1100px;
+    height:300px;
+    margin:auto;
+    padding-top:40px;
+    color:#525252;
+}
+
+.descripcion {
+    width:1100px;
+    float:left;
+    height:80px;
+    font-size:13px;
+    border-bottom:solid;
+    border-bottom-width:thin;
+    border-bottom-color:#999;
+    line-height:20px;
+}
+
+#titulo {
+    width:1100px;
+    height:120px;
+    float:left;
+    text-align:center;
+    background-image:url('../imgs/separador1.png');
+    background-position:bottom;
+    background-repeat:no-repeat;
+}
+
+#imagen_central {
+    width:1100px;
+    height:355px;
+    float:left;
+    background-image:url('../imgs/imagen_central.png');
+    background-position:top;
+    background-repeat:no-repeat;
+}
+
+#login_box {
+    width:335px;
+    height:263px;
+    float:right;
+    background-image:url('../imgs/login_fondo.png');
+    background-position:top;
+    background-repeat:no-repeat;
+    margin-top:25px;
+    padding:20px;
+}
+
+#login_titulo {
+    width:335px;
+    height:25px;
+    float:left;
+    text-align:center;
+    color:#FFF;
+    text-shadow: #01365d 0px -1px 0;
+}
+
+#login_cont {
+    width:335px;
+    height:auto;
+    float:left;
+    margin-top:25px;
+    color:#636365;
+}
+
+#info_web {
+    width:1100px;
+    height:350px;
+    float:left;
+    background-image:url('../imgs/separador2.png');
+    background-position:top;
+    background-repeat:no-repeat;
+    text-align:center;
+    padding-top:20px;
+}
+
+#info {
+    width:300px;
+    height:280px;
+    float:left;
+    background-image:url('../imgs/linea_vertical.png');
+    background-position:right;
+    background-repeat:no-repeat
+}
+
+#info2 {
+    width:300px;
+    height:280px;
+    float:left;
+}
+
+#info_imagen {
+    width:300px;
+    height:auto;
+    margin-top:40px;
+    float:left;
+}
+
+#info_texto {
+    width:300px;
+    height:auto;
+    margin-top:20px;
+    float:left;
+    color:#6e6e6e;
+    font-weight:normal;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow: #FFF 0px -1px 0;
+}
+
+/*-------------------------------------- FOOTER --------------------------------------*/
+
+.footer_largo {
+    width:100%;
+    height:65px;
+    background-image:url('../imgs/footer_bg.png');
+    background-position:top;
+    background-repeat:repeat-x;
+    float:left;
+    background-color:#505254;
+}
+
+.footer_centro {
+    width:1100px;
+    height:65px;
+    margin:auto;
+    text-align:left;
+    color:#999;
+    font-size:14px;
+}
+/*-------------------------------------- - --------------------------------------*/
+
+
+#Main_chart {
+    width:610px;
+    height:600px;
+    float:left;
+}
+
+#Right_charts {
+    width:490px;
+    height:600px;
+    float:left;
+}
+
+
+
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:40px;
+    font-weight:normal;
+    color:#949393;
+    padding:0px;
+    margin:0px;
+    margin-top:20px;
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:17px;
+    font-weight:normal;
+    color:#949393;
+    padding:0px;
+    margin:0px;
+}
+
+h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:26px;
+    font-weight:normal;
+    color:#0b85d1;
+    padding:0px;
+    margin:0px;
+}
+
+.textbox1 {
+    width:150px;
+    height:30px;
+    background-position:left;
+    border:none;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#636365;
+    font-size:16px;
+    background-image:url('../imgs/textbox_bg.png');
+    padding-left:5px;
+    border-radius:10px;
+
+}
+
+.texto_activo {
+    color: #52bddf;
+}
+
+a:link {
+    color: #51565d;
+    text-decoration:none;
+}
+a:visited {
+    color: #51565d;
+    text-decoration:none;
+}
+a:hover {
+    color: #52bddf;
+    text-decoration:none;
+}
+a:active {
+    color: #51565d;
+    text-decoration:none;
+}
+
+#mailto1-bodyEl, 
+#usuario11-bodyEl, 
+#pass11-bodyEl, 
+#provision11-bodyEl, 
+#operacion11-bodyEl, 
+#mailto2-bodyEl{ 	
+width: 220px; 
+}
+
+#radio11-body { 	
+width:95%; 	
+margin-left:2.5%; 
+} 
+
+#btn_agregarNserv { 	
+margin:0px; 
+} 
+
+#conf1-body { 	
+width:98%; 
+} 
+
+#grid, 
+#panelNservicio { 	
+width:100%; }   
+
+#panel_contenedor_config-body, 
+#panel_contenedor_config { 	
+width: 400px; 
+}  
+
+
+
+#conf1 { 	
+width:400px; 	
+margin: 0px; 	
+padding: 0px; 
+}  
+
+#dragndrop01Panel-body { 	
+width:480px; 
+}  
+
